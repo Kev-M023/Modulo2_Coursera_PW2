@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Sobre Nosotros - Tienda Tech Express</title>
+
+  <!-- Bootstrap 4 CSS desde node_modules -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Open Iconic CSS desde node_modules -->
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Barra de navegación fija y responsive -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="oi oi-laptop mr-2 text-info" aria-hidden="true"></span>
+        Tech Express
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTech" aria-controls="navbarTech" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTech">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><span class="oi oi-home mr-1"></span> Inicio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="nosotros.html"><span class="oi oi-people mr-1"></span> Nosotros <span class="sr-only">(actual)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html"><span class="oi oi-envelope-closed mr-1"></span> Contacto & Suscripción</a>
+          </li>
+        </ul>
+        <span class="navbar-text text-light small d-none d-lg-inline">
+          <span class="oi oi-phone mr-1 text-success"></span> +54 11 5555-8888
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html"><span class="oi oi-home mr-1"></span> Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><span class="oi oi-people mr-1"></span> Nosotros</li>
+      </ol>
+    </nav>
+
+    <!-- Información de la empresa y valores -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-body p-4">
+        <h1 class="h3 font-weight-bold text-dark mb-3"><span class="oi oi-globe mr-2 text-primary"></span> Nuestra Historia y Misión</h1>
+        <p class="lead text-muted">Somos líderes en distribución de tecnología y equipamiento informático para profesionales y empresas en Latinoamérica.</p>
+        <p>Desde 2018 brindamos soluciones tecnológicas integrales con foco en la durabilidad, el rendimiento y la satisfacción del usuario. Trabajamos directamente con los principales fabricantes para garantizar garantía oficial y soporte de primer nivel.</p>
+      </div>
+    </div>
+
+    <!-- Valores con Grid y Flexbox -->
+    <div class="row mb-5">
+      <div class="col-12 col-md-4 mb-3">
+        <div class="card h-100 text-center p-3">
+          <div class="card-body">
+            <div class="mb-3 text-primary"><span class="oi oi-badge display-4"></span></div>
+            <h5 class="card-title">Calidad Certificada</h5>
+            <p class="card-text text-muted">Cada componente pasa por un riguroso proceso de control de calidad antes del despacho.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <div class="card h-100 text-center p-3">
+          <div class="card-body">
+            <div class="mb-3 text-success"><span class="oi oi-clock display-4"></span></div>
+            <h5 class="card-title">Puntualidad en Envíos</h5>
+            <p class="card-text text-muted">Logística optimizada para entregas express en 24 a 48 horas en todo el país.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <div class="card h-100 text-center p-3">
+          <div class="card-body">
+            <div class="mb-3 text-info"><span class="oi oi-wrench display-4"></span></div>
+            <h5 class="card-title">Soporte Continuo</h5>
+            <p class="card-text text-muted">Asistencia técnica post-venta con especialistas certificados disponibles los 7 días de la semana.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer con alineaciones requeridas (izquierda, centro, derecha) y etiqueta <address> -->
+  <footer class="footer py-4 mt-5">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-12 col-md-4 text-left mb-3 mb-md-0">
+          <h5><span class="oi oi-map-marker mr-1 text-info"></span> Contacto Comercial</h5>
+          <address class="mb-0">
+            <strong>Tienda Tech Express S.A.</strong><br>
+            Av. Libertador 4500, Piso 5<br>
+            Buenos Aires, Argentina<br>
+            <abbr title="Teléfono">Tel:</abbr> +54 11 5555-8888<br>
+            <a href="mailto:soporte@techexpress.com">soporte@techexpress.com</a>
+          </address>
+        </div>
+
+        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+          <h5>Redes y Comunidad</h5>
+          <p class="mb-2 text-muted">Conectate con nosotros:</p>
+          <div>
+            <a href="https://facebook.com" class="mx-2" target="_blank" rel="noopener"><span class="oi oi-globe mr-1"></span> Facebook</a>
+            <a href="https://instagram.com" class="mx-2" target="_blank" rel="noopener"><span class="oi oi-camera-slr mr-1"></span> Instagram</a>
+            <a href="https://linkedin.com" class="mx-2" target="_blank" rel="noopener"><span class="oi oi-briefcase mr-1"></span> LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 text-right">
+          <h5>Sobre el Sitio</h5>
+          <p class="mb-1">Proyecto Práctico - Módulo 2</p>
+          <small class="text-muted">&copy; 2026 Tienda Tech Express. Todos los derechos reservados.</small>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts JS desde node_modules -->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

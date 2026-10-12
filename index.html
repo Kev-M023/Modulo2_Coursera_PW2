@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Tienda Tech Express - Módulo 2 Bootstrap 4</title>
+
+  <!-- Bootstrap 4 CSS desde node_modules -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Open Iconic CSS desde node_modules -->
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- 1. Barra de navegación fija en la parte superior (fixed-top) y responsive (navbar-expand-md) -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="oi oi-laptop mr-2 text-info" aria-hidden="true"></span>
+        Tech Express
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTech" aria-controls="navbarTech" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTech">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"><span class="oi oi-home mr-1"></span> Inicio <span class="sr-only">(actual)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html"><span class="oi oi-people mr-1"></span> Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html"><span class="oi oi-envelope-closed mr-1"></span> Contacto & Suscripción</a>
+          </li>
+        </ul>
+        <span class="navbar-text text-light small d-none d-lg-inline">
+          <span class="oi oi-phone mr-1 text-success"></span> +54 11 5555-8888
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+
+    <!-- 2. Breadcrumbs ubicando al usuario en el mapa de sitio -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page"><span class="oi oi-home mr-1"></span> Inicio</li>
+      </ol>
+    </nav>
+
+    <!-- 3. Banner promocional / Encabezado atractivo responsive -->
+    <section class="promo-banner">
+      <img src="img/banner-promo.svg" alt="Promoción Especial Lanzamiento" class="img-fluid w-100">
+    </section>
+
+    <!-- 4. Listado de productos con componente CARD (título, cuerpo, footer, imágenes, flex y diseño prolijo) -->
+    <section class="mb-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+          <h2 class="h3 font-weight-bold mb-1">Catálogo de Productos</h2>
+          <p class="text-muted mb-0">Hardware y componentes de alta gama con entrega inmediata.</p>
+        </div>
+        <span class="badge badge-primary p-2">Actualizado 2026</span>
+      </div>
+
+      <div class="row">
+
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-6 col-lg-3 mb-4 d-flex align-items-stretch">
+          <div class="card w-100 d-flex flex-column">
+            <img src="img/product-laptop.svg" class="card-img-top" alt="Notebook Pro 15">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Notebook Pro 15"</h5>
+              <p class="card-text text-muted">12 núcleos, 32GB RAM DDR5, 1TB SSD NVMe para desarrollo intensivo.</p>
+              <div class="mt-auto">
+                <span class="badge badge-success mb-2"><span class="oi oi-check mr-1"></span> Stock Disponible</span>
+              </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <span class="font-weight-bold text-primary">$1,450.00</span>
+              <a href="contacto.html" class="btn btn-outline-primary btn-sm"><span class="oi oi-cart mr-1"></span> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-sm-6 col-lg-3 mb-4 d-flex align-items-stretch">
+          <div class="card w-100 d-flex flex-column">
+            <img src="img/product-monitor.svg" class="card-img-top" alt="Monitor Curvo 27">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Monitor Curvo 27" 4K</h5>
+              <p class="card-text text-muted">Panel IPS 144Hz, 99% sRGB con puerto USB-C Power Delivery 90W.</p>
+              <div class="mt-auto">
+                <span class="badge badge-success mb-2"><span class="oi oi-check mr-1"></span> Stock Disponible</span>
+              </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <span class="font-weight-bold text-primary">$490.00</span>
+              <a href="contacto.html" class="btn btn-outline-primary btn-sm"><span class="oi oi-cart mr-1"></span> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-sm-6 col-lg-3 mb-4 d-flex align-items-stretch">
+          <div class="card w-100 d-flex flex-column">
+            <img src="img/product-teclado.svg" class="card-img-top" alt="Teclado Mecánico RGB">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Teclado Mecánico RGB</h5>
+              <p class="card-text text-muted">Switches hot-swap, cuerpo de aluminio, conexión Bluetooth y 2.4GHz.</p>
+              <div class="mt-auto">
+                <span class="badge badge-warning text-dark mb-2"><span class="oi oi-clock mr-1"></span> Pocas Unidades</span>
+              </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <span class="font-weight-bold text-primary">$120.00</span>
+              <a href="contacto.html" class="btn btn-outline-primary btn-sm"><span class="oi oi-cart mr-1"></span> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-12 col-sm-6 col-lg-3 mb-4 d-flex align-items-stretch">
+          <div class="card w-100 d-flex flex-column">
+            <img src="img/product-auriculares.svg" class="card-img-top" alt="Auriculares Wireless ANC">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Auriculares Wireless ANC</h5>
+              <p class="card-text text-muted">Cancelación de ruido activa híbrida, audio espacial y 35h de autonomía.</p>
+              <div class="mt-auto">
+                <span class="badge badge-success mb-2"><span class="oi oi-check mr-1"></span> Stock Disponible</span>
+              </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <span class="font-weight-bold text-primary">$180.00</span>
+              <a href="contacto.html" class="btn btn-outline-primary btn-sm"><span class="oi oi-cart mr-1"></span> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. Tabla responsive con scroll horizontal (table-responsive) e iconos Open Iconic -->
+    <section class="mb-5">
+      <div class="mb-3">
+        <h3 class="h4 font-weight-bold"><span class="oi oi-spreadsheet mr-2 text-primary"></span> Cuadro Comparativo de Especificaciones</h3>
+        <p class="text-muted">Tabla con desplazamiento horizontal adaptable a cualquier dispositivo móvil sin deformar el sitio.</p>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-striped table-hover mb-0">
+          <thead>
+            <tr>
+              <th scope="col"><span class="oi oi-tag mr-1"></span> Modelo</th>
+              <th scope="col"><span class="oi oi-cog mr-1"></span> Procesador</th>
+              <th scope="col"><span class="oi oi-dashboard mr-1"></span> Memoria RAM</th>
+              <th scope="col"><span class="oi oi-hard-drive mr-1"></span> Almacenamiento</th>
+              <th scope="col"><span class="oi oi-monitor mr-1"></span> Pantalla</th>
+              <th scope="col"><span class="oi oi-shield mr-1"></span> Garantía</th>
+              <th scope="col"><span class="oi oi-star mr-1"></span> Calificación</th>
+              <th scope="col"><span class="oi oi-check mr-1"></span> Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-weight-bold">Notebook Pro 15"</td>
+              <td>Intel Core i7 13th Gen (12 núcleos)</td>
+              <td>32 GB DDR5 5600MHz</td>
+              <td>1 TB SSD NVMe PCIe 4.0</td>
+              <td>15.6" OLED 2.8K 120Hz</td>
+              <td><span class="oi oi-circle-check text-success mr-1"></span> 2 Años Oficial</td>
+              <td><span class="text-warning">★★★★★</span> (4.9)</td>
+              <td><span class="badge badge-success">Disponible</span></td>
+            </tr>
+            <tr>
+              <td class="font-weight-bold">Monitor Curvo 27"</td>
+              <td>Procesador de Imagen Quantum 4K</td>
+              <td>No aplica</td>
+              <td>No aplica</td>
+              <td>27" IPS Curvo 1500R 144Hz</td>
+              <td><span class="oi oi-circle-check text-success mr-1"></span> 1 Año Oficial</td>
+              <td><span class="text-warning">★★★★★</span> (4.8)</td>
+              <td><span class="badge badge-success">Disponible</span></td>
+            </tr>
+            <tr>
+              <td class="font-weight-bold">Teclado Mecánico RGB</td>
+              <td>Microcontrolador ARM 32-bit</td>
+              <td>Memoria integrada 8MB</td>
+              <td>No aplica</td>
+              <td>No aplica</td>
+              <td><span class="oi oi-circle-check text-success mr-1"></span> 1 Año Oficial</td>
+              <td><span class="text-warning">★★★★☆</span> (4.6)</td>
+              <td><span class="badge badge-warning text-dark">Últimas unidades</span></td>
+            </tr>
+            <tr>
+              <td class="font-weight-bold">Auriculares ANC</td>
+              <td>Chip DSP Dual Core</td>
+              <td>No aplica</td>
+              <td>No aplica</td>
+              <td>Drivers Neodimio 40mm</td>
+              <td><span class="oi oi-circle-check text-success mr-1"></span> 1 Año Oficial</td>
+              <td><span class="text-warning">★★★★★</span> (4.9)</td>
+              <td><span class="badge badge-success">Disponible</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 6. Componente MEDIA: Reseñas y testimonios de usuarios -->
+    <section class="mb-5">
+      <div class="mb-3">
+        <h3 class="h4 font-weight-bold"><span class="oi oi-comment-square mr-2 text-primary"></span> Opiniones de Clientes</h3>
+        <p class="text-muted">Implementación del componente Media de Bootstrap para mostrar contenido estructurado con multimedia.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-6 mb-3">
+          <div class="media">
+            <img src="img/avatar-1.svg" class="mr-3 rounded-circle" alt="Martín Gómez">
+            <div class="media-body">
+              <h5 class="mt-0 font-weight-bold">Martín Gómez <small class="text-muted">- Desarrollador Full Stack</small></h5>
+              <p class="mb-1 text-muted">Excelente rendimiento de la Notebook Pro 15". Llegó al interior del país en 24 horas y con el empaque en perfectas condiciones.</p>
+              <small class="text-warning"><span class="oi oi-star"></span> Compra verificada</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 mb-3">
+          <div class="media">
+            <img src="img/avatar-2.svg" class="mr-3 rounded-circle" alt="Lucía Ferraro">
+            <div class="media-body">
+              <h5 class="mt-0 font-weight-bold">Lucía Ferraro <small class="text-muted">- Diseñadora UI/UX</small></h5>
+              <p class="mb-1 text-muted">El monitor 4K superó mis expectativas para calibración de color. El puerto USB-C con carga simplificó todo el escritorio.</p>
+              <small class="text-warning"><span class="oi oi-star"></span> Compra verificada</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 7. Footer con alineaciones requeridas (izquierda, centro, derecha) y etiqueta <address> -->
+  <footer class="footer py-4 mt-5">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Alineación a la izquierda: Datos del comercio con <address> -->
+        <div class="col-12 col-md-4 text-left mb-3 mb-md-0">
+          <h5><span class="oi oi-map-marker mr-1 text-info"></span> Contacto Comercial</h5>
+          <address class="mb-0">
+            <strong>Tienda Tech Express S.A.</strong><br>
+            Av. Libertador 4500, Piso 5<br>
+            Buenos Aires, Argentina<br>
+            <abbr title="Teléfono">Tel:</abbr> +54 11 5555-8888<br>
+            <a href="mailto:soporte@techexpress.com">soporte@techexpress.com</a>
+          </address>
+        </div>
+
+        <!-- Alineación al centro: Redes sociales -->
+        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+          <h5>Redes y Comunidad</h5>
+          <p class="mb-2 text-muted">Conectate con nosotros:</p>
+          <div>
+            <a href="https://facebook.com" class="mx-2" target="_blank" rel="noopener"><span class="oi oi-globe mr-1"></span> Facebook</a>
+            <a href="https://instagram.com" class="mx-2" target="_blank" rel="noopener"><span class="oi oi-camera-slr mr-1"></span> Instagram</a>
+            <a href="https://linkedin.com" class="mx-2" target="_blank" rel="noopener"><span class="oi oi-briefcase mr-1"></span> LinkedIn</a>
+          </div>
+        </div>
+
+        <!-- Alineación a la derecha: Información del sitio y derechos -->
+        <div class="col-12 col-md-4 text-right">
+          <h5>Sobre el Sitio</h5>
+          <p class="mb-1">Proyecto Práctico - Módulo 2</p>
+          <small class="text-muted">&copy; 2026 Tienda Tech Express. Todos los derechos reservados.</small>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts JS desde node_modules -->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
